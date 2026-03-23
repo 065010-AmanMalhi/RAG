@@ -73,23 +73,23 @@ EVALUATION_FRAMEWORK=ragas-llamaindex
 
 
 # ------------------------------------------------------------
-# DATABASE CONFIGURATION
+# DATABASE CONFIGURATION — replace with your actual values locally
 # ------------------------------------------------------------
-
-DB_HOST=localhost
+ 
+DB_HOST=YOUR_DB_HOST
 DB_PORT=5432
-DB_NAME=amandb1
-DB_ROLE=amandb
-DB_USER=amandb
+DB_NAME=YOUR_DB_NAME
+DB_ROLE=YOUR_DB_ROLE
+DB_USER=YOUR_DB_USER
 DB_VECTOR_EXTENSION=pgvector
-
+ 
 # ------------------------------------------------------------
-# FILE PATHS
+# FILE PATHS — replace with your actual local paths
 # ------------------------------------------------------------
-
-DATASET_PATH=<dataset_path>
-QUESTIONS_PATH=<questions_path>
-ANSWERS_PATH=<answers_path>
+ 
+DATASET_PATH=YOUR_DATASET_PATH
+QUESTIONS_PATH=YOUR_QUESTIONS_PATH
+ANSWERS_PATH=YOUR_ANSWERS_PATH
 
 # ------------------------------------------------------------
 # OUTPUT
