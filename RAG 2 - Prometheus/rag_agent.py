@@ -90,8 +90,9 @@ def query_rewriter(state: RAGState, config: Config) -> dict:
     llm = get_llm(config)
     prompt = ChatPromptTemplate.from_messages([
         ("system", """You are a query rewriting assistant. Your task is to rewrite the user's question 
-to make it more specific and better suited for document retrieval from a knowledge base about AI trends, 
-benchmarks, investment, regulations, and education.
+to make it more specific and better suited for document retrieval from a knowledge base about mental health in India, including topics like stigma, 
+treatment gaps, urban mental health burdens, policy, infrastructure, digital mental health, 
+and gender disparities.
 
 Rules:
 - Keep the rewritten query concise (1-2 sentences max)
