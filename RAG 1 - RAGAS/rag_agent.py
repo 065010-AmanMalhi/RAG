@@ -90,8 +90,9 @@ def query_rewriter(state: RAGState, config: Config) -> dict:
     llm = get_llm(config)
     prompt = ChatPromptTemplate.from_messages([
         ("system", """You are a query rewriting assistant. Your task is to rewrite the user's question 
-to make it more specific and better suited for document retrieval from a knowledge base about AI trends, 
-benchmarks, investment, regulations, and education.
+to make it more specific and better suited for document retrieval from a knowledge base about mental health in India, including topics like stigma, 
+treatment gaps, urban mental health burdens, policy, infrastructure, digital mental health, 
+and gender disparities.
 
 Rules:
 - Keep the rewritten query concise (1-2 sentences max)
@@ -501,7 +502,7 @@ def run_rag_query(query: str, config: Config = None) -> dict:
 
 if __name__ == "__main__":
     config = load_config()
-    result = run_rag_query("What three new benchmarks were introduced in 2023?", config)
+    result = run_rag_query("What is the treatment gap for mental health in India?", config)
     print(f"\nAnswer: {result['generated_answer']}")
     print(f"Context snippets: {len(result['context_snippets'])}")
     print(f"Is fallback: {result['is_fallback']}")
