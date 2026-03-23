@@ -502,7 +502,7 @@ def run_rag_query(query: str, config: Config = None) -> dict:
 
 if __name__ == "__main__":
     config = load_config()
-    result = run_rag_query("What three new benchmarks were introduced in 2023?", config)
+    result = run_rag_query("What is the treatment gap for mental health in India?", config)
     print(f"\nAnswer: {result['generated_answer']}")
     print(f"Context snippets: {len(result['context_snippets'])}")
     print(f"Is fallback: {result['is_fallback']}")
