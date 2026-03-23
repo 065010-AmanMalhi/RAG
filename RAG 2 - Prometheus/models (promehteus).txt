@@ -70,24 +70,24 @@ EVALUATION_FRAMEWORK=prometheus
 # - prometheus           : Prometheus evaluation framework
 # - ragas-llamaindex     : RAGAs via LlamaIndex (default for this instance)
 
-
 # ------------------------------------------------------------
-# DATABASE CONFIGURATION
+# DATABASE CONFIGURATION — replace with your actual values locally
 # ------------------------------------------------------------
-
-DB_HOST=192.240.1.177
-DB_NAME=bhavya_manya
-DB_ROLE=bhavya_manya
-DB_USER=bhavya_manya
+ 
+DB_HOST=YOUR_DB_HOST
+DB_PORT=5432
+DB_NAME=YOUR_DB_NAME
+DB_ROLE=YOUR_DB_ROLE
+DB_USER=YOUR_DB_USER
 DB_VECTOR_EXTENSION=pgvector
-
+ 
 # ------------------------------------------------------------
-# FILE PATHS
+# FILE PATHS — replace with your actual local paths
 # ------------------------------------------------------------
-
-DATASET_PATH=/home/ashok/RAGSYSTEMS/rag_system_llama_4(aman2)/dataset1.txt
-QUESTIONS_PATH=/home/ashok/RAGSYSTEMS/rag_system_llama_4(aman2)/Questions.txt
-ANSWERS_PATH=/home/ashok/RAGSYSTEMS/rag_system_llama_4(aman2)/Answers.txt
+ 
+DATASET_PATH=YOUR_DATASET_PATH
+QUESTIONS_PATH=YOUR_QUESTIONS_PATH
+ANSWERS_PATH=YOUR_ANSWERS_PATH
 
 # ------------------------------------------------------------
 # OUTPUT
